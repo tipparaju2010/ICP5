@@ -9,7 +9,7 @@
 <div class="container">
   <div class="todo-list">
     <div class="todo-list__head">
-      <h3><i class="far fa-list-alt"></i> Todo List</h3>
+      <h3><i class="far fa-list-alt"></i> Add Items to Todo List</h3>
       <ul class="todo-list__items" *ngFor="let item of items; let id = index" >
         <li id="item{{id}}" [class]="item.complete ? 'checked' : 'unchecked'">
           {{item.text}}

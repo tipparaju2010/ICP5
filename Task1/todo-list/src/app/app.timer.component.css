@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+input {
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: 24px;
+  width: 400px;
+}
+
+.countdown {
+  font-size: 45px;
+  height: 100px;
+  color: #afeeee;
+}
+
+#seconds {
+  color: #f54545;
+}

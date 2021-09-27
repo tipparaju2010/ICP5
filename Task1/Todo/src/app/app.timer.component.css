@@ -18,9 +18,9 @@ input {
 .countdown {
   font-size: 45px;
   height: 100px;
-  color: #afeeee;
+  color: #ff03fb;
 }
 
 #seconds {
-  color: #f54545;
+  color: #000000;
 }

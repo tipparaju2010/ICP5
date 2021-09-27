@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppTimerComponent implements OnInit {
   time = '';
-  target = '2021-12-31T20:49:48';
+  target = '2021-12-31T23:59:59';
   seconds = '00';
 
-  private readonly update = () => {
+  private readonly updateTime = () => {
     let duration = Date.parse(this.target) - Date.now();
     if (duration < 0) {
       clearInterval(this.timer);
@@ -37,9 +37,9 @@ export class AppTimerComponent implements OnInit {
     this.time = `${days} days | ${pretty(hours)} hours | ${pretty(minutes)} minutes`;
   }
 
-  private timer = setInterval(this.update, 1000);
+  private timer = setInterval(this.updateTime, 1000);
 
   ngOnInit() {
-    this.update();
+    this.updateTime();
   }
 }
